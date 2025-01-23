@@ -77,6 +77,8 @@ export const translations = {
     ourMissionTitle: "Notre mission",
     ouMissionDesc:
       "Former des élèves bilingues, compétents et responsables, capables de relever les défis du 21e siècle. Nous nous engageons à fournir un environnement d'apprentissage stimulant qui encourage la curiosité intellectuelle, le respect mutuel et l'excellence académique.",
+    seeMore: "En savoir plus",
+    close: "Fermer",
   },
   en: {
     home: "Home",
@@ -95,7 +97,7 @@ export const translations = {
     reduire: "Minimize",
     facilities: "Our Facilities",
     facilitiesDesc:
-      "Nos infrastructures modernes et bien équipées offrent un environnement d'apprentissage optimal pour nos élèves.",
+      "Our modern and well-equipped infrastructures offer an optimal learning environment for our students.",
     facilyTitle: " Modern School Infirmary",
     facilityDesc:
       "Our state-of-the-art infirmary represents a comprehensive health care facility designed to ensure the physical and mental well-being of our students. Equipped with modern medical technologies and managed by qualified health professionals, our infirmary provides: Immediate and preventive medical care Personalized health monitoring A secure and compassionate environment, Rigorous safety and emergency protocol ",
@@ -154,5 +156,7 @@ export const translations = {
     ourMissionTitle: "Our Mission",
     ouMissionDesc:
       "To train bilingual, competent, and responsible students capable of meeting the challenges of the 21st century. We are committed to providing a stimulating learning environment that fosters intellectual curiosity, mutual respect, and academic excellence.",
+    seeMore: "See More",
+    close: "Close",
   },
 };

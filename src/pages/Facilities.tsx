@@ -13,7 +13,7 @@ const FacilityCard: React.FC<{
   icon: React.ElementType;
 }> = ({ title, description, image, icon: Icon }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const { t } = useTranslation();
   return (
     <>
       <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-neutral-400/50">
@@ -30,7 +30,7 @@ const FacilityCard: React.FC<{
             onClick={() => setIsModalOpen(true)}
             className="w-full bg-primary text-white py-2 rounded hover:bg-primary-dark transition-colors"
           >
-            En savoir plus
+            {t("seeMore")}
           </button>
         </div>
       </div>
@@ -50,7 +50,7 @@ const FacilityCard: React.FC<{
                 onClick={() => setIsModalOpen(false)}
                 className="text-gray-600 hover:text-primary"
               >
-                Fermer
+                {t("close")}
               </button>
             </div>
             <img
@@ -73,19 +73,19 @@ const Facilities: React.FC = () => {
     {
       title: t("computerLab"),
       description: t("computerLabDesc1"),
-      image: "/placeholder-computer-lab.jpg",
+      image: "/cover.jpg",
       icon: Computer,
     },
     {
       title: t("library"),
       description: t("libraryDesc1"),
-      image: "/placeholder-library.jpg",
+      image: "/cover.jpg",
       icon: Book,
     },
     {
       title: t("facilyTitle"),
       description: t("facilityDesc"),
-      image: "/placeholder-media-center.jpg",
+      image: "/cover.jpg",
       icon: Newspaper,
     },
   ];
@@ -113,7 +113,6 @@ const Facilities: React.FC = () => {
             />
           ))}
         </div>
-
       </div>
     </div>
   );
